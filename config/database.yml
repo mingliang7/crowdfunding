@@ -20,6 +20,6 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-# Postgres used on Heroku and connection via DATABASE_URL env var.
+# Postgres used on Heroku and connection via 'DATABASE_URL' env var.
 production:
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['HEROKU_POSTGRESQL_GOLD_URL'] %>
