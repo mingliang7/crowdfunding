@@ -21,3 +21,57 @@ input[type="radio"], input[type="checkbox"] {
   height: initial;
   margin-top: 7px;
 }
+
+@media screen and (max-width: 780px) {
+  #hero{
+    min-width:500px;
+  }
+  .main-search{
+    margin-top:15%;
+    margin-left: 30%;
+    input[type="text"]{
+      width:200px;
+      height:50px;
+
+    }
+    input[type="submit"]{
+      min-height:30px;
+      margin-left: -30px;
+    }
+  }
+}
+
+@media screen and (max-width: 300px){
+  #hero{
+    width:300px;
+    height:200px;
+  }
+  .main-search{
+    margin-top:2%;
+    margin-left: 10%;
+    h1{
+      font-size:20px;
+    }
+    p{
+      font-size:10px;
+    }
+      input[type="text"]{
+        width:200px;
+        height:30px;
+      }
+      input[type="submit"]{
+        height: 10px;
+        width:60px;
+        display:block;
+        margin-top:5px;
+        margin-left: 60px;
+      }
+    }
+}
+
+.space_from_top{
+  margin-top: 200px;
+}
+.well {
+ padding: 5px;
+}
