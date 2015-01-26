@@ -1,3 +1,105 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// css for home/index search
+.main-search{
+  padding: 10px;
+
+    h1{
+      color: #fff;
+      font-weight: bold;
+    }
+    p{
+      color: #fff;
+    }
+
+margin-top:15%;
+ margin-left: 25%;
+  input[type="text"]{
+    width: 500px;
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid #ddd;
+    background: rgba(225,255,255,0.5);
+        &:focus{
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+  input[type="submit"]{
+    background: #E9573F;
+    border: 1px solid #ddd;
+    height: 50px;
+    color: #fff;
+    width: 100px;
+  }
+
+}
+video{
+  min-height: 100%;
+  min-width: 100%;
+}
+#hero {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 500px;
+  overflow: hidden;
+  min-width: 1045px;
+}
+
+
+
+
+@media screen and (max-width: 780px) {
+  #hero{
+    min-width:500px;
+  }
+  .main-search{
+    margin-top:15%;
+    margin-left: 30%;
+    input[type="text"]{
+      width:200px;
+      height:50px;
+
+    }
+    input[type="submit"]{
+      min-height:30px;
+      margin-left: -30px;
+    }
+  }
+}
+
+@media screen and (max-width: 300px){
+  #hero{
+    width:300px;
+    height:200px;
+  }
+  .main-search{
+    margin-top:2%;
+    margin-left: 10%;
+    h1{
+      font-size:20px;
+    }
+    p{
+      font-size:10px;
+    }
+      input[type="text"]{
+        width:200px;
+        height:30px;
+      }
+      input[type="submit"]{
+        height: 10px;
+        width:60px;
+        display:block;
+        margin-top:5px;
+        margin-left: 60px;
+      }
+    }
+}
+
+.space_from_top{
+	margin-top: 200px;
+}

@@ -1,2 +1,27 @@
-<h1>Hello World</h1>
+<%= render 'layouts/fix_navbar' %>
 
+
+<div class="container-fluid">
+	<div id="hero">
+	<%= video_tag(src=["crowd_funding.mp4", "crowd_funding.webm"], autoplay: true, autobuffer: true, loop: true, preload: true)%>
+	</div>
+	<div class="main-search">
+
+  <h1>FUND ME</h1>
+  <p>
+    As the fundraising site, we help individuals, businesses, and non-profits raise money online.
+  </p>
+  	<%= form_tag('', :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], autofocus: true, placeholder: "Looking for Donate fund?...." %>
+  <%= submit_tag "Search", :name => nil %>
+<% end %>
+
+
+</div>
+</div>
+<div class="space_from_top"></div>
+<div class="container">
+	<h1>Hello</h1>
+<p>This app is under construction </p>
+
+</div>
