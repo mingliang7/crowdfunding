@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+- 2.2.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: VYrLe++52K4ZCGDyNfIBaJyMGvmebURplJDj6HaO+kbP1jLLrIr109klCFjwz9kso6CfEh98WRyr5AT9sAh/BCNfs4T5EB8tSplLgvJUqqp0hjdu4zjHhuTlXL75M6jc4aNOQn8xLe3TZ5F90k3KC/Cda6AZkeN2og5mXfHPFig=
+  app: devbootstrap-fundme
+  on:
+    repo: devbootstrap/fundme
+before_script:
+- psql -c 'create database fund_me_test;' -U postgres
