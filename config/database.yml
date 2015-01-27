@@ -31,4 +31,4 @@ test:
 
 # Postgres used on Heroku and connection via 'HEROKU_POSTGRESQL_GOLD_URL' env var.
 production:
-  url: <%= ENV['HEROKU_POSTGRESQL_GOLD_URL'] %>
+  url: <%= ENV['DATABASE_URL'] %>
