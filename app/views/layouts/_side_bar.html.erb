@@ -1,0 +1,17 @@
+<h3>Explore Categories
+        <small></small>
+    </h3>
+
+    
+   
+        <div class="col-sm-2">
+            <nav class="nav-sidebar">
+                <ul class="nav">
+                <% @categories.each do |cate| %>
+                    <li><%= link_to cate.name%></li>
+                <%end%>
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-log-in"></i> Sign in</a></li>
+                     <li><a href="javascript:;"><i class="glyphicon glyphicon-off"></i> Sign up</a></li>
+                </ul>
+            </nav>
+        </div>

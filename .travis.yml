@@ -8,3 +8,5 @@ deploy:
   app: devbootstrap-fundme
   on:
     repo: devbootstrap/fundme
+before_script:
+- psql -c 'create database fund_me_test;' -U postgres

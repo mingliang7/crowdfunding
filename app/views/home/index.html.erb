@@ -1,3 +1,153 @@
-<h1>Hello World</h1>
+<%= render 'layouts/fix_navbar' %>
+
+
+ 
+
+	<div id="hero">
+	<%= video_tag(src=["crowd_funding.mp4", "crowd_funding.webm"], autoplay: true, autobuffer: true, loop: true, preload: true)%>
+	</div>
+	<div class="main-search">
+
+  <h1>FUND ME</h1>
+  
+  <p>
+    As the fundraising site, we help individuals, businesses, and non-profits raise money online.
+  </p>
+  	<%= form_tag('', :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], autofocus: true, placeholder: "Looking for Donate fund?...." %>
+  <%= submit_tag "Search", :name => nil %>
+<% end %>
+
+
+
+</div>
+<div class="space_from_top"></div>
+<div class="container-fluid">
+<div class="container">
+	<div class="col-md-2"></div>
+  	<div class="col-md-8">
+  		<%= image_tag("funding_banner.jpeg") %>
+  	</div>
+  </div>
+	<h1 align="center">EXPLORE COMMUNITES AND SOMETHING ELSE <br>
+	<small>visiting your favourite story and DONATED</small>
+	</h1>
+</div>	
+<br><br>
+<div class="container-fluid well">
+<div class="container">
+	 <div class="row">
+	 <%= render 'layouts/side_bar'%>
+		<div class="col-md-10">
+
+			<div class="tabbable-panel">
+				<div class="tabbable-line">
+					<ul class="nav nav-tabs ">
+						<li class="active">
+							<a href="#tab_default_1" data-toggle="tab">
+							Recent </a>
+						</li>
+						<li>
+							<a href="#tab_default_2" data-toggle="tab">
+							Ending soon</a>
+						</li>
+						<li>
+							<a href="#tab_default_3" data-toggle="tab">
+							Most Funding </a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab_default_1">
+							
+		<div class="row">
+			<div class="col-xs-12  col-sm-12 ">
+				<ul class="event-list">
+					
+
+					<li>
+						<time datetime="2014-07-20">
+							<span class="day">4</span>
+							<span class="month">Jul</span>
+							<span class="year">2014</span>
+							<span class="time">ALL DAY</span>
+						</time>
+						<img alt="Independence Day" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg" />
+						<div class="info">
+							<h2 class="title">Independence Day</h2>
+							<p class="desc">United States Holiday</p>
+						</div>
+						<div class="social">
+							<ul>
+								<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+								<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+								<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+						<div class="tab-pane" id="tab_default_2">
+							<p>
+								Howdy, I'm in Tab 2.
+							</p>
+							<p>
+								Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
+							</p>
+							<p>
+								<a class="btn btn-warning" href="http://j.mp/metronictheme" target="_blank">
+									Click for more features...
+								</a>
+							</p>
+						</div>
+						<div class="tab-pane" id="tab_default_3">
+							<p>
+								Howdy, I'm in Tab 3.
+							</p>
+							<p>
+								Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat
+							</p>
+							<p>
+								<a class="btn btn-info" href="http://j.mp/metronictheme" target="_blank">
+									Learn more...
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+	</div>
+</div>
+</div>
+</div>
+<div class="after_content"></div>
+<div class="container-fluid">
+	<h1 align="center">Cambodia Crowdfunding Engine<br>
+	<small>As the largest global fundraising site, we help individuals, businesses, and non-profits raise money online.</small>
+	</h1>
+</div>
+<br><br>
+<div class="container">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-6">
+	
+				<div class="title"><h1>Health</h1></div>
+				<%= image_tag("bg-health.jpg") %>
+		</div>
+		<div class="col-xs-5">
+		<div class="title">Technology</div>
+			<%= image_tag("bg-technology.jpg") %>
+		</div>
+		<div class="col-xs-5">
+			<div class="title">Community</div>
+			<%= image_tag("bg-kid.jpg") %>
+		</div>
+		</div>
+</div>
+<div class="space_from_top"></div>
 
 <h4>Hello world again</h4>
